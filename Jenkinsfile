@@ -16,7 +16,8 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                // Your deployment commands here
+                sh 'sudo cp -r * /var/www/html/'
+                sh 'sudo service httpd restart'
             }
         }
     }
