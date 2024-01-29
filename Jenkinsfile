@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git https://github.com/Ahtishamsaleem/jenkin-sonarcube-docker.git
+                git 'https://github.com/Ahtishamsaleem/jenkin-sonarcube-docker.git'
             }
         }
         
